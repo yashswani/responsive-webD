@@ -1,0 +1,103 @@
+/* Stranger Things Aesthetic */
+:root {
+    --hawkins-red: #ff0000;
+    --void-blue: #05050a;
+    --neon-blue: #00f2ff;
+    --steel: #c0c0c0;
+}
+
+body {
+    background-color: var(--void-blue);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                      url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    font-family: 'ITC Benguiat', 'Courier New', serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    color: var(--steel);
+}
+
+#upside-down-container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Iconic Title Styling */
+.main-title {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--hawkins-red);
+    font-size: 5rem;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px var(--hawkins-red);
+}
+
+.bottom-title {
+    font-size: 3rem;
+    letter-spacing: 15px;
+}
+
+.subtitle {
+    font-family: 'Courier New', monospace;
+    color: var(--neon-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+/* The Project Grid */
+#project-wall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project-group {
+    flex: 1 1 250px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.group-label {
+    color: var(--hawkins-red);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--hawkins-red);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Stranger Buttons */
+.stranger-btn {
+    display: block;
+    color: var(--steel);
+    text-decoration: none;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid transparent;
+    font-family: 'Courier New', monospace;
+    transition: all 0.4s ease;
+    background: rgba(255,255,255,0.05);
+}
+
+.stranger-btn:hover {
+    color: white;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid var(--hawkins-red);
+    box-shadow: 0 0 20px var(--hawkins-red);
+    transform: translateX(10px);
+}
+
+/* Footer */
+#wall-footer {
+    margin-top: 60px;
+    font-style: italic;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
